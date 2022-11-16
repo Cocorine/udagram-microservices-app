@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: cocorine/udagram-frontend:v1
+        image: cocorine/udagram-frontend:v2
         ports:
           - containerPort: 80
