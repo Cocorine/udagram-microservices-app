@@ -38,13 +38,13 @@ Use Travis CI pipeline to build and push images to your DockerHub registry.
 
     ```bash
     # Tagging
-      - docker tag udagram-api-feed sudkul/udagram-api-feed:v1
+      - docker tag udagram-api-feed sudkul/udagram-api-feed:v0
     # Do similar for other three images```
     ```bash
     # Push
     # Assuming DOCKER_PASSWORD and DOCKER_USERNAME are set in the Travis repository settings
       - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-      - docker push sudkul/udagram-api-feed:v1
+      - docker push sudkul/udagram-api-feed:v0
     # Do similar for other three images
     ```
 > **Tip**: Use different tags each time you push images to the Dockerhub.   
