@@ -8,4 +8,4 @@ kubectl delete svc backend-user
 kubectl delete svc frontend
 kubectl delete svc reverseproxy
 kubectl delete svc publicfrontend
-kubectl delete svc publicreversproxy
+kubectl delete svc publicreverseproxy

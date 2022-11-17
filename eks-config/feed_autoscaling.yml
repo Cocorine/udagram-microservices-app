@@ -1,0 +1,14 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: fibonacci
+  namespace: ....
+spec:
+  scaleRef:
+    kind: ReplicationController
+    name: fibonacci
+    subresource: scale
+  minReplicas: 1
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 50
+
